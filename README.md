@@ -1,5 +1,5 @@
 # express-mesto-gha--0
-[![Tests](https://github.com/Sergokok/express-mesto-gha/actions/workflows/tests-13-sprint.yml/badge.svg)](https://github.com/Sergokok/express-mesto-gha/actions/workflows/tests-13-sprint.yml)
+[![Tests](https://github.com/Sergokok/express-mesto-gha/actions/workflows/tests-13-sprint.yml/badge.svg)](https://github.com/Sergokok/express-mesto-gha--0/actions/workflows/tests-13-sprint.yml)
 # Проект Mesto фронтенд + бэкенд
 
 
