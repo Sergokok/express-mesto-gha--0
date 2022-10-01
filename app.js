@@ -10,7 +10,7 @@ const app = express();
 
 app.use((reg, res, next) => {
   req.user = {
-    _id: '633460047ca70724038e111e',
+    _id: '633460047ca70724038e111e', // вставьте сюда _id созданного в предыдущем пункте пользователя
   };
 
   next();
@@ -34,5 +34,3 @@ mongoose.connect('mongodb://localhost:27017/mestodb', {
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
 });
-
-

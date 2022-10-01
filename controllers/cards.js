@@ -6,13 +6,9 @@ const SERVER_ERROR_CODE = 500;
 
 module.exports.getCards = (req, res) => {
   Card.find({})
-    .then((cards) =>
-      res.send({ cards }))
-    .catch(() =>
-    { res.status(SERVER_ERROR_CODE).send({ message: 'Ошибка сервера' })
-    });
+    .then((cards) => res.send({ cards }))
+    .catch(() => { res.status(SERVER_ERROR_CODE).send({ message: 'Ошибка сервера' }); });
 };
-
 
 module.exports.createCard = (req, res) => {
   const { name, link } = req.body;
@@ -21,13 +17,13 @@ module.exports.createCard = (req, res) => {
     .catch((err) => {
       if (err.name === 'ValidationError') {
         return res.status(DATA_ERROR_CODE)
-        .send({ message: 'Ошибка валидации' });
+          .send({ message: 'Ошибка валидации' });
       }
       return res
         .status(SERVER_ERROR_CODE)
         .send({ message: 'Ошибка сервера' });
     });
-}
+};
 
 // module.exports.createCard = (req, res) => {
 //   const { name, link, owner = req.user._id } = req.body;
@@ -52,7 +48,7 @@ module.exports.deleteCard = (req, res) => {
     .then((card) => {
       if (!card) {
         return res.status(NOT_FOUND_ERROR)
-          .send({message: 'Карточка не найдена'});
+          .send({ message: 'Карточка не найдена' });
       }
       return res.send({ card });
     })
@@ -72,7 +68,7 @@ module.exports.likeCard = (req, res) => {
     .then((card) => {
       if (!card) {
         return res.status(NOT_FOUND_ERROR)
-          .send({message: 'Карточка не найдена'});
+          .send({ message: 'Карточка не найдена' });
       }
       return res.send({ card });
     })
@@ -92,7 +88,7 @@ module.exports.dislikeCard = (req, res) => {
     .then((card) => {
       if (!card) {
         return res.status(NOT_FOUND_ERROR)
-          .send({message: 'Карточка не найдена'});
+          .send({ message: 'Карточка не найдена' });
       }
       return res.send({ card });
     })

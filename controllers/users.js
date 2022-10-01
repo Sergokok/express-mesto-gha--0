@@ -63,5 +63,3 @@ module.exports.editUserAvatar = (req, res) => {
       return res.status(SERVER_ERROR_CODE).send({ message: 'Ошибка сервера' });
     });
 };
-
-
