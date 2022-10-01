@@ -1,5 +1,5 @@
 {
-  "name": "express-mesto-gha-0",
+  "name": "express-mesto-gha--0",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sergokok/express-mesto-gha-0.git"
+    "url": "git+https://github.com/Sergokok/express-mesto-gha--0.git"
   },
   "keywords": [],
   "author": "Sergokok",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sergokok/express-mesto-gha-0/issues"
+    "url": "https://github.com/Sergokok/express-mesto-gha--0/issues"
   },
-  "homepage": "https://github.com/Sergokok/express-mesto-gha-0#readme",
+  "homepage": "https://github.com/Sergokok/express-mesto-gha--0#readme",
   "devDependencies": {
     "eslint": "^8.23.1",
     "eslint-config-airbnb-base": "^15.0.0",

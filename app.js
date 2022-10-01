@@ -8,9 +8,9 @@ const { PORT = 3000 } = process.env;
 
 const app = express();
 
-app.use((reg, res, next) => {
+app.use((req, res, next) => {
   req.user = {
-    _id: '633460047ca70724038e111e', // вставьте сюда _id созданного в предыдущем пункте пользователя
+    _id: '6338adc865223fad3ab316ce',
   };
 
   next();
